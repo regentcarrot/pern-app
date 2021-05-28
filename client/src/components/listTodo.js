@@ -9,7 +9,7 @@ const ListTodo=()=>{
     //delete function
     const deleteTodo=(id)=>{
 
-        axios.delete(`http://localhost:5000/todos/${id}`).then(()=>{
+        axios.delete(`/todos/${id}`).then(()=>{
         setTodos(todos.filter((todo)=> todo.todo_id!==id))
 
         })
@@ -20,7 +20,7 @@ const ListTodo=()=>{
    // get function 
    const getTodos= ()=> {
 
-    axios.get("http://localhost:5000/todos").then((response)=>{return response.data}).then((data)=>setTodos(data))
+    axios.get("/todos").then((response)=>{return response.data}).then((data)=>setTodos(data))
 
     }
 

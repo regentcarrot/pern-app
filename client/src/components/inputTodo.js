@@ -6,7 +6,7 @@ const InputTodo=()=>{
 
 const addDescription=()=>{
 // e.preventDefault();
-  axios.post("http://localhost:5000/addtodo",{description:description}).then((response)=>{return response.data}).then((response)=>{console.log(response)})
+  axios.post("/addtodo",{description:description}).then((response)=>{return response.data}).then((response)=>{console.log(response)})
 
 setDescription("");
 

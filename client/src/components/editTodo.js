@@ -8,7 +8,7 @@ const EditTodo=({todo})=>{
     const [description, setDescription]= useState(todo.description);
 
   const onEdit=(id)=>{
-    axios.put(`http://localhost:5000/todos/${id}`, {
+    axios.put(`/todos/${id}`, {
         description: description
     }).then(()=> window.location = "/");
 
