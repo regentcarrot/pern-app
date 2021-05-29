@@ -1,4 +1,4 @@
-CREATE DATABASE pern;
+-- CREATE DATABASE pern;
 
 CREATE TABLE todo(
 
